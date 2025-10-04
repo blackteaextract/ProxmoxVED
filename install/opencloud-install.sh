@@ -60,11 +60,12 @@ curl -fsSL https://raw.githubusercontent.com/opencloud-eu/opencloud-compose/refs
 
 cat <<EOF >"$ENV_FILE"
 OC_URL=https://${OC_HOST}
-OC_INSECURE=false
+OC_INSECURE=true
 IDM_CREATE_DEMO_USERS=false
 OC_LOG_LEVEL=warning
 OC_CONFIG_DIR=${CONFIG_DIR}
 OC_BASE_DATA_PATH=${DATA_DIR}
+#OC_DATA_DIR=
 
 # Proxy
 PROXY_TLS=false
